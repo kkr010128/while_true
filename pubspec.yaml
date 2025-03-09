@@ -1,0 +1,36 @@
+name: achieve_plus
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  chip_radio_button: ^1.1.3
+  flutter:
+    sdk: flutter
+  http: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: Arita
+      fonts:
+        - asset: assets/fonts/Arita/AritaDotumKR-Medium.ttf
+        - asset: assets/fonts/Arita/AritaDotumKR-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Arita/AritaDotumKR-Light.ttf
+        - asset: assets/fonts/Arita/AritaDotumKR-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Arita/AritaDotumKR-Thin.ttf
+          weight: 200
