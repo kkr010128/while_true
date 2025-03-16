@@ -1,7 +1,8 @@
+import 'package:tryCatch/widgets/labels/style_label2.dart';
 import 'package:flutter/material.dart';
 import 'banner_text.dart';
 import '../buttons/achieve_button.dart';
-import 'package:achieve_plus/widgets/labels/style_label3.dart';
+import 'package:tryCatch/widgets/labels/style_label3.dart';
 
 class BannerWidget extends StatelessWidget {
   final String imagePath;
@@ -32,18 +33,27 @@ class BannerWidget extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 120,
+          top: 80,
           left: 20,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(children: [
-                StyleLabel3(text: "컴퓨터공학과"),
-                SizedBox(width: 4),
-                StyleLabel3(text: "학습동아리"),
-                SizedBox(width: 4),
-                StyleLabel3(text: "1기 모집중"),
-              ]),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(children: [
+                    StyleLabel3(text: "학습동아리"),
+                    SizedBox(width: 4),
+                    StyleLabel3(text: "컴퓨터공학과"),
+                    SizedBox(width: 4),
+                    StyleLabel3(text: "UX/UI 디자이너"),
+                    SizedBox(width: 4),
+                    StyleLabel3(text: "개발자"),
+                  ]),
+                  SizedBox(height: 20),
+                  StyleLabel2(text: "1기 모집중"),
+                ],
+              ),
               const SizedBox(height: 10),
               BannerText(text: title),
               const SizedBox(height: 10),

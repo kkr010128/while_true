@@ -1,1 +1,1 @@
-const String appTitle = "Achieve Plus";
+const String appTitle = "tryCatch();";

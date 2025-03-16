@@ -1,11 +1,11 @@
 {
-    "name": "achieve_plus",
-    "short_name": "achieve_plus",
+    "name": "tryCatch()",
+    "short_name": "tryCatch",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "컴퓨터공학과 학습동아리 tryCatch()",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

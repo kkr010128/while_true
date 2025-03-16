@@ -13,16 +13,17 @@ class AchieveTabController extends StatefulWidget {
   });
 
   @override
-  _AchieveTabControllerState createState() => _AchieveTabControllerState();
+  AchieveTabControllerState createState() => AchieveTabControllerState();
 }
 
-class _AchieveTabControllerState extends State<AchieveTabController> {
+class AchieveTabControllerState extends State<AchieveTabController> {
   int _selectedIndex = 0;
 
   final List<String> _tabLabels = [
     "동아리 소개",
-    "학습 프로세스",
-    "개발 프로세스",
+    "프로세스",
+    "참여 후기",
+    "모집요강",
     "지원하기",
   ];
 
@@ -59,14 +60,16 @@ class _AchieveTabControllerState extends State<AchieveTabController> {
         decoration: BoxDecoration(
           border: Border(
             bottom: BorderSide(
-              color: isSelected ? Colors.white : Colors.transparent,
+              color: isSelected
+                  ? Color.fromARGB(255, 164, 164, 255)
+                  : Colors.transparent,
               width: 2, // 선택된 경우만 강조
             ),
           ),
         ),
         child: AnimatedDefaultTextStyle(
           duration: Duration(milliseconds: 300),
-          // curve: Curves.easeInOut,
+          curve: Curves.easeInOut,
           style: TextStyle(
             color: isSelected
                 ? widget.textColor

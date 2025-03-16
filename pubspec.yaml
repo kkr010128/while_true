@@ -1,5 +1,5 @@
-name: achieve_plus
-description: "A new Flutter project."
+name: tryCatch
+description: "열정 하나로 성취하는 가장 확실한 방법"
 publish_to: 'none'
 version: 0.1.0
 
@@ -10,6 +10,8 @@ dependencies:
   chip_radio_button: ^1.1.3
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.2.1
+  flutter_svg: ^2.0.17
   http: ^1.3.0
 
 dev_dependencies:
@@ -21,7 +23,12 @@ flutter:
   uses-material-design: true
 
   assets:
+    - .env
     - assets/
+    - assets/intro/
+    - assets/process/
+    - assets/review/
+
 
   fonts:
     - family: Arita
